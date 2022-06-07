@@ -10,10 +10,10 @@
       }
     ]
   },
-  "private": true,
+  "private": false,
   "name": "POC-Deploy-example",
   "description": "To learn how to dist electron apps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Tuzi94",
   "main": "app/background.js",
   "scripts": {
