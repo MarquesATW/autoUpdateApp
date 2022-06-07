@@ -1,6 +1,17 @@
 {
+  "build": {
+    "appId": "com.tuzi94.deploypoc",
+    "icon": "build/icon.png",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "MarquesATW",
+        "repo": "autoUpdateApp"
+      }
+    ]
+  },
   "private": true,
-  "name": "POC - Deploy",
+  "name": "POC-Deploy-example",
   "description": "To learn how to dist electron apps",
   "version": "1.0.0",
   "author": "Tuzi94",
@@ -8,13 +19,17 @@
   "scripts": {
     "dev": "nextron",
     "build": "nextron build",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder",
+    "publish": "electron-builder --mac --win -p always"
   },
   "dependencies": {
     "@types/node": "^17.0.40",
     "@types/react": "^18.0.12",
     "electron-serve": "^1.1.0",
     "electron-store": "^8.0.1",
+    "electron-updater": "^5.0.1",
     "typescript": "^4.7.3"
   },
   "devDependencies": {
