@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "POC - Deploy",
+  "description": "To learn how to dist electron apps",
+  "version": "1.0.0",
+  "author": "Tuzi94",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.40",
+    "@types/react": "^18.0.12",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.0.1",
+    "typescript": "^4.7.3"
+  },
+  "devDependencies": {
+    "electron": "^18.2.0",
+    "electron-builder": "^23.0.3",
+    "next": "^12.1.6",
+    "nextron": "^8.1.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
